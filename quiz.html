@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Final Project, Part II</title>
+
+    <!-- Imporint the External CCS Sheet and JS Scripts -->
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <!--Header with the nav linking each page -->
+    <header>
+      <div class="nav">
+        <nav>
+          <ul>
+            <li><a href="./japan.html">Japan</a></li>
+            <li><a href="./greece.html">Greece</a></li>
+            <!--Using Class name to give unique style-->
+            <li class="title"><a href="./index.html">World On the Web</a></li>
+            <li><a href="./spain.html">Spain</a></li>
+            <li><a href="./austrilia.html">Australia</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- Form that makes up the body of the quiz and used to take in values from the user -->
+    <section>
+      <div class="flex-container">
+        <form id="quiz" name="quiz">
+          <!--Answer:Tokyo -->
+          <p>What is the capital of Japan?</p>
+          <input id="textbox" type="text" name="question_one" /> <br />
+          <!-- Answer:25.74 Million -->
+          <p>What the population of Australia?</p>
+          <input
+            id="mc"
+            type="radio"
+            value="32_Million"
+            name="question_two"
+          />32 Million <br />
+          <input
+            id="mc"
+            type="radio"
+            value="10_Million"
+            name="question_two"
+          />10 Million <br />
+          <input
+            id="mc"
+            type="radio"
+            value="26_Million"
+            name="question_two"
+          />26 Million <br />
+          <input
+            id="mc"
+            type="radio"
+            value="14_Million"
+            name="question_two"
+          />14 Million <br />
+          <!--Answer: Egypt-->
+          <p>Which is the oldest country?</p>
+          <input
+            id="mc"
+            type="radio"
+            value="Spain"
+            name="question_three"
+          />Spain
+          <br />
+          <input
+            id="mc"
+            type="radio"
+            value="France"
+            name="question_three"
+          />France
+          <br />
+          <input
+            id="mc"
+            type="radio"
+            value="Japan"
+            name="question_three"
+          />Japan
+          <br />
+          <input
+            id="mc"
+            type="radio"
+            value="Egypt"
+            name="question_three"
+          />Egypt
+          <br />
+          <!--Answer: 4 -->
+          <p>How many oceans are there on the Earth?</p>
+          <input id="textbox" type="text" name="question_four" /> <br />
+          <!-- Button calling the JS fuction-->
+          <input
+            type="button"
+            id="button"
+            value=" I'm finished "
+            onclick="handleSubmit();"
+          />
+        </form>
+        <!-- Container for messages changed by the script with an empty paragraph and button -->
+        <div id="message_wrapper">
+          <p id="message">Test your knowledge here with my Quiz</p>
+          <section id="after_submit">
+            <p id="message_to_user"></p>
+            <button id="return_button"></button>
+          </section>
+        </div>
+      </div>
+    </section>
+    <!-- Footer Containing  Email Link-->
+    <footer>
+      <div class="footer-bar">
+        <ul>
+          <a id="quiz_link" href="./quiz.html">Take Me to the Quiz</a>
+          <a id="email_link" href="mailto:email@gmail.com">Send Email</a>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
